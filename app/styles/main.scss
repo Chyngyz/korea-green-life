@@ -22,5 +22,15 @@
 	font-style: normal;
 }
 
+$font-bold: 'AvenirNextCyr-Bold';
+$font-reg: 'AvenirNextCyr-Regular';
+$font-italic: 'AvenirNextCyr-Italic';
+
+@import "bourbon/bourbon";
+@import "vendor/bootstrap/bootstrap";
+
+@import "modules/responsive";
 
 @import "modules/header"; 
+@import "modules/hero"; 
+@import "modules/content"; 

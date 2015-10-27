@@ -1,1 +1,1 @@
-console.log("'Allo 'Allo!");
+!function(n){n(document).ready(function(){n(window).scroll(function(){n(this).scrollTop()>200?n("#menu").addClass("shown"):n("#menu").removeClass("shown")})})}(jQuery);

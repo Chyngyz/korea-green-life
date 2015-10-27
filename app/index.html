@@ -42,7 +42,7 @@
         <!-- End of header-top -->
 
         <!-- Begin  header-main -->
-        <div class="header--main">
+        <div class="header--main hidden-xs hidden-sm">
             <div class="container">
                 <div class="header--main-in">
                     <div class="row">
@@ -71,6 +71,34 @@
             </div>
         </div>
         <!-- End of header-main -->
+
+        <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                  <img src="images/KGL-logo.png" alt="KGL Logo">
+              </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#" >О нас</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Больницы</a></li>
+                <li><a href="#">Обследования</a></li>
+                <li><a href="#">Вопрос-ответ</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
     </header>
     
     <!-- Begin hero -->
@@ -110,13 +138,13 @@
                     <h4>Новости</h4>
                     <article class="news--item">
                         <span class="news--item-date">20.12.2015</span>
-                        <h5 class="news--item-title">Заголовок события новости или чего то другого</h5>
-                        <p class="news-item--body">Естественно, что динамичное продвижение в одной специализации дает собственные преимущества таких клиник и больниц.</p>
+                        <a href="#" class="news--item-title">Заголовок события новости или чего то другого</a>
+                        <p class="news--item-body">Естественно, что динамичное продвижение в одной специализации дает собственные преимущества таких клиник и больниц.</p>
                     </article>
                     <article class="news--item">
                         <span class="news--item-date">20.12.2015</span>
-                        <h5 class="news--item-title">Заголовок события новости или чего то другого</h5>
-                        <p class="news-item--body">Естественно, что динамичное продвижение в одной специализации дает собственные преимущества таких клиник и больниц.</p>
+                        <a href="#" class="news--item-title">Заголовок события новости или чего то другого</a>
+                        <p class="news--item-body">Естественно, что динамичное продвижение в одной специализации дает собственные преимущества таких клиник и больниц.</p>
                     </article>
                     <a href="#" class="news--more">Все новости</a>
                 </div>
@@ -126,31 +154,41 @@
             <div class="row">
                 
                 <!-- Begin hospital -->
-                <div class="col-md-6 col-xs-12 hospitals">
-                    <h2 class="hospitals--title">Многопрофильные больницы</h2>
-                    <p class="hospitals--meta">Многие многопрофильные больницы Кореи созданы на базе медицинских факультетов ведущих университетов, а это значит:</p>
-                    <ul>
-                        <li class="hospitals--feature">только самые квалифицированные и опытные специалисты;</li>
-                        <li class="hospitals--feature">последнии технологии в области лечения и диагностирования заболеваний всех органов и систем;</li>
-                        <li class="hospitals--feature">диагностика в самые кратчайшие сроки;</li>
-                        <li class="hospitals--feature">консультации сразу нескольких специалистов;</li>
-                    </ul>
-                    <a href="#" class="custom-btn custom-btn-green">Все больницы</a>
+                <div class="col-md-6 col-xs-12">
+                    <div class="hospitals">
+                        <h2 class="hospitals--title">Многопрофильные больницы</h2>
+                        <p class="hospitals--meta">Многие многопрофильные больницы Кореи созданы на базе медицинских факультетов ведущих университетов, а это значит:</p>
+                        <ul>
+                            <li class="hospitals--feature">
+                                <a href="#">только самые квалифицированные и опытные специалисты;</a>
+                            </li>
+                            <li class="hospitals--feature">последнии технологии в области лечения и диагностирования заболеваний всех органов и систем;</li>
+                            <li class="hospitals--feature">диагностика в самые кратчайшие сроки;</li>
+                            <li class="hospitals--feature">консультации сразу нескольких специалистов;</li>
+                        </ul>
+                        <a href="#" class="custom-btn custom-btn-green">Все больницы</a>
+                    </div>
                 </div>
                 <!-- End of hospital -->
 
                 <!-- Begin hospital-spec -->
-                <div class="col-md-6 col-xs-12 hospitals-spec">
-                    <h2 class="hospitals-spec--title">Специализированные клиники</h2>
-                    <p class="hospitals-spec--text">С развитием медицины в Корее успешно стали развиваться специализированные клиники, которые предоставляют спектр медицинских услуг в одной узкой специализации. <br>Естественно, что динамичное продвижение в одной специализации дает собственные преимущества таких клиник и больниц. <br>Помимо узкоспециализированного оборудования, врачи и доктора подобных клиник постоянно совершенствуют свои методы и технологии благодаря многолетнему и большому практическому </p>
-                    <a href="#" class="custom-btn custom-btn-lightgreen">Все клиники</a>
+                <div class="col-md-6 col-xs-12">
+                    <div class="hospitals-spec">
+                        <h2 class="hospitals-spec--title">Специализированные клиники</h2>
+                        <p class="hospitals-spec--text">С развитием медицины в Корее успешно стали развиваться специализированные клиники, которые предоставляют спектр медицинских услуг в одной узкой специализации. </p>
+                        <p class="hospitals-spec--text">Естественно, что динамичное продвижение в одной специализации дает собственные преимущества таких клиник и больниц. </p>
+                        <p class="hospitals-spec--text">Помимо узкоспециализированного оборудования, врачи и доктора подобных клиник постоянно совершенствуют свои методы и технологии благодаря многолетнему и большому практическому </p>
+                        <a href="#" class="custom-btn custom-btn-lightgreen">Все клиники</a>
+                    </div>
                 </div>
                 <!-- End of hospital-spec -->
             </div>
             
             <div class="row">
-                <div class="col-xs-12 hr-head">
-                    <h2>Этапы подготовки</h2>
+                <div class="col-xs-12">
+                    <div class="hr-head">
+                        <h2 class="hr-head--title">Этапы подготовки</h2>
+                    </div>
                 </div>
                 
                 <!-- Tabs nav -->
@@ -171,21 +209,22 @@
                 <div class="col-md-6 col-xs-12">
                     <div class="tab-content">
                       <div class="tab-pane active" id="a">
-                        <ul class="list-group pull-left">
-                          <li class="list-group-item">Сбор информации</li>
-                          <li class="list-group-item">Отправка запроса в несколько клиник</li>
-                          <li class="list-group-item">Получение ответа</li>
-                          <li class="list-group-item">Принятие решения о выборе клиники и дате поездки</li>
-                          <li class="list-group-item">Предварительное бронирование обследования/лечения</li>
+                        <ul class="custom-list pull-left">
+                            <li class="custom-list-item">Сбор информации</li>
+                            <li class="custom-list-item">Отправка запроса в несколько клиник</li>
+                            <li class="custom-list-item">Получение ответа</li>
+                            <li class="custom-list-item">Принятие решения о выборе клиники и дате поездки</li>
+                            <li class="custom-list-item">Предварительное бронирование обследования/лечения</li>
                         </ul>
                       </div>
                       <div class="tab-pane" id="b">
-                        <ul class="list-group pull-left">
-                          <li class="list-group-item">Сбор информации</li>
-                          <li class="list-group-item">Отправка запроса в несколько клиник</li>
-                          <li class="list-group-item">Получение ответа</li>
-                          <li class="list-group-item">Принятие решения о выборе клиники и дате поездки</li>
-                          <li class="list-group-item">Предварительное бронирование обследования/лечения</li>
+                        <ul class="custom-list pull-left">
+                            <li class="custom-list-item">Принятие решения о выборе клиники и дате поездки</li>
+                            <li class="custom-list-item">Отправка запроса в несколько клиник</li>
+                            <li class="custom-list-item">Получение ответа</li>
+                          
+                            <li class="custom-list-item">Сбор информации</li>
+                            <li class="custom-list-item">Предварительное бронирование обследования/лечения</li>
                         </ul>
                       </div>
                       <div class="tab-pane" id="c">CCCCThirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae.</div>
@@ -199,7 +238,7 @@
 
             <div class="row">
                 <div class="col-xs-12 hr-head">
-                    <h2>Этапы подготовки</h2>
+                    <h2 class="hr-head--title">Этапы подготовки</h2>
                 </div>
                 <div class="col-xs-12">
                     <div class="extra-services">
@@ -226,64 +265,72 @@
     </section>
     <!-- End of content -->
 
+    
+
     <!-- Begin  footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <!-- Begin  footer-consult -->
-                <div class="footer-consult">
-                    
+        <!-- Begin  footer-consult -->
+        <div class="footer-consult">
+            <div class="container">
+                <div class="col-xs-12">
+                    <a href="#">Записаться на бесплатную консультацию</a>
                 </div>
-                <!-- End of footer-consult -->
             </div>
-            
-            <div class="row">
-                <!-- Begin  footer-body -->
-                <div class="footer-body">
-                    <div class="col-md-3 text-center">
-                        <img src="images/KGL-logo-white.png" height="60" width="120" alt="">
-                        <p class="copy">&copy; 2013-2015 Korea Green Life <br>Все права зщищены</p>
-                    </div>
-                    <div class="col-md-2">
-                        <nav class="footer-nav">
-                            <ol>
-                                <li><a href="#">О нас</a></li>
-                                <li><a href="#">Новости</a></li>
-                                <li><a href="#">Услуги</a></li>
-                                <li><a href="#">Больницы </a></li>
-                            </ol>
-                        </nav>
-                    </div>
-                    <div class="col-md-2">
-                        <nav class="footer-nav">
-                            <ol>
-                                <li><a href="#">Этапы подготовки</a></li>
-                                <li><a href="#">Вопрос-ответ</a></li>
-                                <li><a href="#">Контакты</a></li>
-                            </ol>
-                        </nav>
-                    </div>
-                    <div class="col-md-3">
-                        <form action="#">
-                            <div class="custom-form">
-                                <input type="text" placeholder="Поиск по сайту">
-                                <span class="search-icon"></span>
-                            </div>
-                        </form>
-                        <ul class="social">
-                            <li><a href="#"><span class="icon icon-twitter"></span></a></li>
-                            <li><a href="#"><span class="icon icon-fb"></span></a></li>
-                            <li><a href="#"><span class="icon icon-vk"></span></a></li>
-                            <li><a href="#"><span class="icon icon-mm"></span></a></li>
-                            <li><a href="#"><span class="icon icon-ok"></span></a></li>
-                        </ul>
-                    </div>
-                    <img class="tiger" src="images/tiger.png" alt="">
-                </div>
-                <!-- End of footer-body -->
-            </div>
-            
         </div>
+        <!-- End of footer-consult -->
+        
+        <!-- Begin footer-main -->
+        <div class="footer-main">
+            <div class="container">            
+                <div class="row">
+                    <!-- Begin  footer-body -->
+                    <div class="footer-body clearfix">
+                        <div class="col-md-3">
+                            <img src="images/KGL-logo-white.png" height="60" width="120" alt="">
+                            <p class="copy">&copy; 2013-2015 Korea Green Life <br>Все права зщищены</p>
+                        </div>
+                        <div class="col-md-2 col-sm-6 no-paddings">
+                            <nav class="footer-nav">
+                                <ul>
+                                    <li><a href="#">О нас</a></li>
+                                    <li><a href="#">Новости</a></li>
+                                    <li><a href="#">Услуги</a></li>
+                                    <li><a href="#">Больницы </a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-md-2 col-sm-6 no-paddings">
+                            <nav class="footer-nav">
+                                <ul>
+                                    <li><a href="#">Этапы подготовки</a></li>
+                                    <li><a href="#">Вопрос-ответ</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-md-3">
+                            <form action="#">
+                                <div class="custom-form">
+                                    <input type="text" placeholder="Поиск по сайту">
+                                    <button type="submit" class="search-icon"></button>
+                                </div>
+                            </form>
+                            <ul class="social">
+                                <li><a href="#"><span class="icon icon-twitter"></span></a></li>
+                                <li><a href="#"><span class="icon icon-fb"></span></a></li>
+                                <li><a href="#"><span class="icon icon-vk"></span></a></li>
+                                <li><a href="#"><span class="icon icon-mir"></span></a></li>
+                                <li><a href="#"><span class="icon icon-ok"></span></a></li>
+                            </ul>
+                        </div>
+                        <img class="tiger" src="images/tiger.png" alt="">
+                    </div>
+                    <!-- End of footer-body -->
+                </div>
+                
+            </div>
+        </div>
+        <!-- End of footer-main -->
 
         
 

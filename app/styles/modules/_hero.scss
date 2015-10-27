@@ -2,6 +2,8 @@
 	height: 100vh;
 	padding-top: 100px;
 	position: relative;
+	background-size: cover;
+	background-position: center center;
 
 	&:after {
 		content: "";
@@ -11,8 +13,6 @@
 		width: 100%;
 		height: 100%;
 		background-color: rgba(0,0,0,0.65);
-		background-size: cover;
-		background-position: center center;
 		z-index: 1;
 	}
 
@@ -26,6 +26,10 @@
 		@include MQ(MD) {
 			width: 990px;
 		}
+
+		@include MQM(XS) {
+			top: 50%;
+		}
 	}
 
 	h1 {
@@ -34,6 +38,11 @@
 		line-height: 70px;
 		font-family: $font-bold;
 		text-transform: uppercase;
+
+		@include MQM(XS) {
+			font-size: 20px;
+			line-height: 1.2;
+		}
 	}
 
 	p {
@@ -58,6 +67,15 @@
 		display: inline-block;
 		margin-top: 85px;
 		@include transition(all 0.2s ease-in-out);
+
+		@include MQM(XS) {
+			font-size: 14px;
+			margin-top: 20px;
+			padding: 15px 15px;
+			color: #fff;
+			background-color: rgba(177, 212, 52,0.7);
+			border-color: #b1d434;
+		}
 
 		&:hover {
 			background-color: rgba(177, 212, 52,0.7);

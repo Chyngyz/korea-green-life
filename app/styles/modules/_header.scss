@@ -58,6 +58,64 @@ body {
 
 		}
 	}
+
+	.navbar-default {
+		background-color: #FFFFFF;
+		@include transform(translateY(-100%));
+		@include transition(transform .2s ease-in);
+
+		@include MQM(MD) {
+			@include transform(translateY(0));
+		}
+		&.shown {
+			@include transform(translateY(0));
+		}
+		.navbar-nav > li {
+
+			&.active {
+				a {
+					color: #fff;
+					background-color: #13ac4e;
+
+					&:hover {
+						color: #fff;
+					}
+				}
+			}
+
+			& > a {
+				color: #000;
+				text-decoration: underline;
+				@include MQM(MD) {
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+
+				&:hover,
+				&:active {
+					color: #13ac4e;
+				}
+
+			}
+		}
+	}
+
+	.navbar-brand {
+		padding: 0 10px;
+
+		@include MQ(SM) {
+			padding: 0 15px;
+		}
+
+		img {
+			height: 90%;
+			width: auto;
+		}
+	}
+
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: #14ac4e;
+	}
 }
 
 

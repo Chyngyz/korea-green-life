@@ -251,6 +251,7 @@ body {
 		    border: 1px solid #b3d333;
 		    cursor: default;
 		    border-right: 1px solid transparent;
+		    outline: none;
 
 		    @include MQM(XS) {
 		    	overflow: hidden;

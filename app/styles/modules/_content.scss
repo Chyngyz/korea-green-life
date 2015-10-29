@@ -6,6 +6,64 @@ body {
 	padding: 0;
 }
 
+.line-list {
+	margin-top: 20px;
+	padding: 0;
+
+	&--item {
+		display: block;
+		padding-left: 35px;
+		position: relative;
+		font-size: 19px;
+		margin-top: 20px;
+
+		@include MQM(XS) {
+			font-size: 14px;
+		}
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 10px;
+			left:0;
+			height: 2px;
+			width: 22px;
+			background-color: #b3d333;
+		}
+	}
+}
+
+.bullet-list {
+	margin: 0;
+	padding: 0;
+	
+	&--feature {
+		font-size: 17px;
+		line-height: 20px;
+		padding: 0 15px;
+		display: block;
+		position: relative;
+		list-style: none;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 8px;
+			left: 0;
+			width: 8px;
+			height: 8px;
+			background-color: #14ac4e;
+			border-radius: 50%;
+		}
+
+		a {
+			color: #14ac4e;
+			text-decoration: underline;
+		}
+	}
+}
+	
+
 .content {
 	h1 {
 		color: #14ac4e;
@@ -21,33 +79,13 @@ body {
 		}
 	}
 
-	.features {
-		margin-top: 20px;
-
-		&--item {
-			display: block;
-			padding-left: 35px;
-			position: relative;
-			font-size: 18px;
-			margin-top: 20px;
-
-			@include MQM(XS) {
-				font-size: 14px;
-			}
-
-			&:before {
-				content: "";
-				position: absolute;
-				top: 10px;
-				left:0;
-				height: 2px;
-				width: 22px;
-				background-color: #b3d333;
-			}
-		}
-	}
+	
 
 	.news {
+		@include MQ(MD) {
+			padding-left: 85px;
+		}
+
 		h4 {
 			font-size: 22px;
 			font-family: $font-bold;
@@ -66,16 +104,21 @@ body {
 			}
 
 			&-title {
-				font-size: 18px;
+				font-size: 19px;
 				margin-top: 0;
 				margin-bottom: 0;
 				text-decoration: underline;
 				display: block;
 				color: #000;
+
+				&:hover {
+					color: #14ac4e;
+				}
 			}
 
 			&-body {
 				color: rgba(0,0,0,.5);
+				font-size: 15px;
 			}
 		}
 
@@ -126,42 +169,17 @@ body {
 		}
 
 		ul {
-			margin: 0;
-			padding: 0;
 			padding: 0 10px;
 
 			li {
-				list-style: none;
-				margin-bottom: 25px;
+				margin-bottom: 16px;
 			}
 		}
 
-		&--feature {
-			font-size: 16px;
-			line-height: 20px;
-			padding: 0 15px;
-			display: block;
-			position: relative;
-
-			&:before {
-				content: "";
-				position: absolute;
-				top: 8px;
-				left: 0;
-				width: 8px;
-				height: 8px;
-				background-color: #14ac4e;
-				border-radius: 50%;
-			}
-
-			a {
-				color: #14ac4e;
-				text-decoration: underline;
-			}
-		}
+		
 
 		&--text {
-			font-size: 16px;
+			font-size: 17px;
 			line-height: 20px;
 			margin-top: 20px;
 
@@ -276,6 +294,8 @@ body {
 			width: 80%;
     		border-right: 1px solid transparent;
     		position: relative;
+    		color: #000;
+    		font-size: 17px;
 
     		@include MQM(XS) {
 		    	width: 100%;
@@ -295,6 +315,10 @@ body {
 	@include MQM(XS) {
 		margin-top: 30px;
 	}
+
+	.tab-pane {
+		font-size: 17px;
+	}
 }
 
 .custom-list {
@@ -308,7 +332,7 @@ body {
 	}
 
 	&-item {
-		font-size: 16px;
+		font-size: 17px;
 		line-height: 20px;
 		padding: 0 15px;
 		display: block;
@@ -349,6 +373,7 @@ body {
 		text-align: center;
 		color: #000;
 		text-decoration: underline;
+		font-size: 17px;
 
 		@include MQM(XS) {
 			width: 80px;
@@ -358,6 +383,11 @@ body {
 		img {
 			width: 100%;
 			margin-bottom: 20px;
+		}
+
+		&:hover {
+			text-decoration: none;
+			color: #14ac4e;
 		}
 	}
 }

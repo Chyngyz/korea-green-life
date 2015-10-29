@@ -116,6 +116,17 @@ body {
 	.navbar-default .navbar-toggle .icon-bar {
 		background-color: #14ac4e;
 	}
+
+	.navbar-nav {
+		.lang-switcher {
+			color: #14ac4e !important;
+			margin-left: 20px;
+
+			@include MQM(SM) {
+				margin-left: 0;
+			}
+		}
+	}
 }
 
 
@@ -130,6 +141,8 @@ body {
 	}
 	img {
 		margin-right: 5px;
+		position: relative;
+		top: -2px;
 	}
 }
 

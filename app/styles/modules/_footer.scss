@@ -67,6 +67,10 @@
 			color: #fff;
 			text-decoration: underline;
 
+			&:hover {
+				text-decoration: none;
+			}
+
 			&:before {
 				content: "";
 				position: absolute;
@@ -104,6 +108,11 @@
 
 		li {
 			display: inline-block;
+		}
+
+		a:hover {
+			opacity: 0.4;
+			@include transition(all 0.1s ease-in);
 		}
 	}
 

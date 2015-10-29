@@ -5,19 +5,11 @@
 		
 		$(window).scroll(function(){                          
             if ($(this).scrollTop() > 200) {
-            	$('#menu').addClass('shown');
+            	$('#main-menu-index').addClass('shown');
             } else {
-                $('#menu').removeClass('shown');
+                $('#main-menu-index').removeClass('shown');
             }
         });
-	
-	
-
-		
-
-
-
-
 	});
 
 
